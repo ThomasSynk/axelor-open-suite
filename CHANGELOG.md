@@ -7,6 +7,7 @@
 - CONTROL POINT: change french translation of name field.
 - INVOICE: less margins between the customer name/address zone and the invoice lines table on Birt printout.
 - AnalyticMoveLine: Validate total percentage.
+- STOCK MOVE : Product translation in birt.
 
 ## Bug Fixes
 - Manuf Order: fix issue when printing multiple manufacturing orders.
