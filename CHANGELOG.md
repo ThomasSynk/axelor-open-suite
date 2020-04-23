@@ -8,6 +8,7 @@
 - INVOICE: less margins between the customer name/address zone and the invoice lines table on Birt printout.
 - AnalyticMoveLine: Validate total percentage.
 - STOCK MOVE : Product translation in birt.
+- PRODUCTION : removed hideIf of manufOrder field in operation-order-form.
 
 ## Bug Fixes
 - Manuf Order: fix issue when printing multiple manufacturing orders.
