@@ -208,7 +208,11 @@
 		      	</panel>
 	      		<panel name="costsPanel" title="Costs" colSpan="6">
 			        <field name="costPrice" colSpan="6" readonlyIf="costTypeSelect != 1" onChange="action-product-record-compute-sale-price"/>
-			        <field name="costTypeSelect" colSpan="6" onChange="action-product-group-cost-type-select-onchange"/>
+			        <field name="costTypeSelect" colSpan="6" onChange="action-product-group-cost-type-select-onchange" hidden="true"/>
+                    <panel-related name="productCostComputingMethodsPanel" field="productCostComputingMethodList" 
+                                   grid-view="product-cost-computing-method-grid" form-view="product-cost-computing-method-form"
+                                   canMove="true" orderBy="sequence" colSpan="12">
+                    </panel-related>
 			        <field name="managPriceCoef" colSpan="12" onChange="action-product-record-compute-sale-price"/>
 					<field name="shippingCoef" onChange="action-product-group-cost-type-select-onchange" showIf="!defShipCoefByPartner &amp;&amp; purchasable" if-module="axelor-purchase" if="__config__.app.isApp('purchase')"/>
 					<field name="defShipCoefByPartner" onChange="action-product-method-supplier-catalog-coeff" hideIf="!purchasable" if-module="axelor-purchase" if="__config__.app.isApp('purchase')"/>

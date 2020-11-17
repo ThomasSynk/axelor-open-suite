@@ -97,7 +97,10 @@
 		<integer name="costTypeSelect" title="Cost type"
 			selection="base.product.cost.type.select" default="1" />
 
-		<integer name="supplierDeliveryTime" title="Supplier delivery time (days)" min="0" />
+		<one-to-many name="productCostComputingMethodList" title="Product cost computing methods"
+            ref="com.axelor.apps.base.db.ProductCostComputingMethod"/>
+        
+        <integer name="supplierDeliveryTime" title="Supplier delivery time (days)" min="0" />
 
 		<many-to-one name="barCode" title="Barcode"
 			ref="com.axelor.meta.db.MetaFile" />
